@@ -8,6 +8,8 @@ sudo apt install git -y
 if [ -d "$HOME/network-api" ]; then
     show "Deletting Package stored..." "progress"
     rm -rf "$HOME/network-api"
+else
+    show "Network API Removed. Go to next step"
 fi
 sleep 3
 show "Nexus-XYZ network API..." "progress"
@@ -21,7 +23,7 @@ if systemctl is-active --quiet nexus.service; then
     sudo systemctl stop nexus.service
     sudo systemctl disable nexus.service
 else
-    show "nexus.service disabled."
+    show "nexus.service not created. Now begin to create a service"
 fi
 
 show "Creating systemd..." "progress"
