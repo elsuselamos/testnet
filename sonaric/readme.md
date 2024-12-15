@@ -1,5 +1,5 @@
 
-![enter image description here](https://github.com/tiendat247/testnet/blob/main/sonaric/sonaric.jpg)
+![enter image description here](https://github.com/elsuselamos/testnet/blob/main/sonaric/sonaric.jpg)
 
 Website:  https://sonaric.xyz/
 
