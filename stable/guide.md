@@ -4,7 +4,7 @@
    #Download binary & initialize node
 
     wget https://file.blocksync.me/stable/stabled
-    chmod +x stabled && sudo mv stabled ~/go/bin
+    chmod +x stabled && mv stabled ~/go/bin
     stabled version
     echo "export MONIKER="Mynode"" >> $HOME/.bash_profile
     echo "export STABLE_PORT="30"" >> $HOME/.bash_profile
