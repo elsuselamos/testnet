@@ -32,7 +32,7 @@
     s%:26657%:${STABLE_PORT}657%g;
     s%:6060%:${STABLE_PORT}060%g;
     s%:26656%:${STABLE_PORT}656%g;
-    s%^external_address = \"\"%external_address = \"$(wget -qO- eth0.me):${AIRCHAIN_PORT}656\"%;
+    s%^external_address = \"\"%external_address = \"$(wget -qO- eth0.me):${STABLE_PORT}656\"%;
     s%:26660%:${STABLE_PORT}660%g" $HOME/.stabled/config/config.toml
 
 # config pruning
