@@ -1,8 +1,6 @@
 
 # Download the latest binary for AMD64 architecture
-
-   #Download binary & initialize node
-
+ 
     wget https://file.blocksync.me/stable/stabled
     chmod +x stabled && mv stabled ~/go/bin
     stabled version
@@ -11,7 +9,7 @@
     source $HOME/.bash_profile
     stabled init $MONIKER --chain-id stabletestnet_2201-1
 
-#Download genesis & addrbook
+# Download genesis.json, addrbook.json
    
     curl -Ls https://file.blocksync.me/stable/genesis.json > $HOME/.stabled/config/genesis.json 
     curl -Ls https://file.blocksync.me/stable/addrbook.json > $HOME/.stabled/config/addrbook.json
