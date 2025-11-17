@@ -93,7 +93,7 @@
     [Install]
     WantedBy=multi-user.target
     EOF
-# Downlaod snapshot
+# Download snapshot (optional)
 
     SNAP_NAME=$(curl -s https://file.blocksync.me/stable/ | grep -o 'snapshot_[0-9]\+\.tar\.lz4' | sort | tail -n 1)
     curl -o - -L https://file.blocksync.me/stable/${SNAP_NAME}  | lz4 -c -d - | tar -x -C $HOME/.stabled
