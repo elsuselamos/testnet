@@ -14,7 +14,7 @@
 #Download genesis & addrbook
    
     curl -Ls https://file.blocksync.me/stable/genesis.json > $HOME/.stabled/config/genesis.json 
-    curl -Ls https://file.blocksync.me/stable/addrbook.json > HOME/.stabled/config/addrbook.json
+    curl -Ls https://file.blocksync.me/stable/addrbook.json > $HOME/.stabled/config/addrbook.json
 
 # set custom ports in app.toml file
 
